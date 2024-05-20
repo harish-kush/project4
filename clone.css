@@ -1,0 +1,229 @@
+@font-face {
+    font-family: PP mori;
+    src: url(./ppmori.ttf);
+}
+*::selection {
+    background-color: black;
+    color: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: PP mori;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+   
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #EDBFFF;;
+    position: fixed;
+    z-index: 99;
+    transform: translate((-50%,-50%));
+    opacity: 0;
+    scale: 0;
+}
+
+.main{
+    background-color: #0F0D0D;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 100;
+    padding-top: 12vw;
+    position: relative;
+}
+.nav{
+    height: 55px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    /* mix-blend-mode: difference; */
+    z-index:102;
+    background-color: #0F0D0D;
+}
+.nav img{
+    height: 26px;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    font-family: PP mori;
+}
+.nav3 .circle{
+            height: 20px;
+            width: 20px;
+            background-color: #fff;
+            border-radius: 50%;         
+}
+.nav h4{
+    text-transform: uppercase;
+    font-size: 15px;
+    /* font-weight: 100; */
+    font-weight: bold;
+}
+.nav h4:nth-child(1){
+    border-bottom: 1.5px solid #fff;
+}
+.page1 h1{
+    
+    font-family: PP mori;
+    font-size: 8vw;
+    font-weight: 300;
+    
+    margin-left: 6vw;
+}
+.page1 h2{
+    font-family: PP mori;
+    font-size: 8vw;
+    font-weight: 300;
+    margin-left: 26vw;
+}
+.page1 video{
+   margin-top: 5%;
+    /* height: 100%; */
+    width: 60%;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid black;
+}
+.page2 h1{
+    font-size: 7vw;
+    /* font-family: PP mori; */
+    font-weight: 500;
+    color: #111;
+}
+.page2container{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.page2left{
+    width: 35%;
+    /* background-color: blue; */
+}
+.page2left h2{
+    font-size: 4vw;
+    font-weight: 300;
+    color: #111;
+}
+.page2right{
+    width: 24%;
+    /* background-color: blue; */
+}
+.page2right p{
+    font-size: 2vw;
+    font-weight: 300;
+    color: #111;
+}
+.page2right button{
+    height: 3vh;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: #edbfff;
+    color: #111;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.page3{
+    min-height: 130vh;
+    width: 100%;
+    
+}
+.page3 h1{
+    font-size: 6.8vw;
+    font-weight: 400;
+    color: #0F0D0D;
+    padding: 100px 5vw;
+}
+.page3-part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.page3-part1 img{
+       height: 400px;
+       margin-top: 160px;
+       padding-left: 30px;
+}
+.page3-part1 video{
+    padding-right: 30px;
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+
+    
+    /* background-color: aqua; */
+}
+.page4 .elem{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.elem img{
+    position: absolute;
+   opacity: 0;
+   transition: all ease-in 0.5s;
+   transform: translateY(10%) rotate(2deg);
+}
+.elem .tb{
+    /* margin-top: 20vh; */
+      font-size: 3.3vw;
+      height: 15vh;
+
+      /* background-color: green; */
+      overflow: hidden;
+      
+}
+.elem img:nth-child(1){
+  
+    left: 1%;
+}
+.elem img:nth-child(3){
+  
+    right: 5%;
+}
+.elem h1{
+    font-size: 7.5vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+    
+}
